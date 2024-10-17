@@ -2,7 +2,7 @@ const express = require('express');
 const net = require('net');
 const axios = require('axios'); // Add axios for GitHub API requests
 const app = express();
-const port = 3000; // Adjust the port as needed
+const port = process.env.PORT || 3000; // Adjust the port as needed
 
 const GITHUB_TOKEN = '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'; // Replace with your GitHub token
 
